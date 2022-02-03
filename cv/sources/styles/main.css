@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #464646;
+}
+
+.resume {
+    display: flex;
+    padding: 70px 60px;
+    max-width: 900px;
+    width: 797px;
+    height: 1127px;
+    margin: 50px auto;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0px 0px 89px 200px #CCCCCC;
+}
+
+.resume__main-title,
+.resume__section-main-title,
+.resume__subitem-title {
+    color: #1E3755;
+    font-weight: 900;
+}
+
+.resume__main-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.resume::before,
+.resume::after {
+    content: "";
+    height: 50px;
+    background-color: #366090;
+    position: absolute;
+}
+
+.resume::before {
+    width: 350px;
+    left: 0;
+    top: 0;
+}
+
+.resume::after {
+    width: 567px;
+    right: 0;
+    bottom: 0;
+}
+
+.resume__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.resume__column-left {
+    margin-right: 70px;
+}
+
+.resume__section {
+    margin-bottom: 30px;
+}
+
+.resume__section-main-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.resume__section-main-title::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #366090;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+
+.resume__subitem-title {
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: -2px;
+}
+
+.resume__section-body {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.resume__section-body a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.resume__section-body b{
+    color: #000;
+    font-weight: 700;
+}
+
+.resume__section-body p {
+    margin: 0;
+}
+
+.resume__section-body p:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.resume__header {
+    margin-bottom: 60px;
+}
+
+.resume__photo {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #1E3755;
+    border-radius: 50%;
+}
+
+.resume__section-subitem:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.resume__section-list {
+    margin: 0;
+}
+
+.resume__section-list-item {
+    margin-bottom: 3px;
+}
+
+.resume__soft-skills {
+    display: grid;
+    grid-template-columns: repeat(3, 0.3fr);
+}
+
+.resume__languages-list {
+    padding: 0;
+    list-style: none;
+}
